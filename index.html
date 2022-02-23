@@ -8,8 +8,8 @@
   <title>RPG HERO</title>
 </head>
 <body>
-  <section class="classScreen">
-    <h3 class="classScreenInfo">Selecciona una clase</h3>
+  <section class="classScreen" id="classScreen">
+    <h3 class="classScreenInfo title">Selecciona una clase</h3>
     <div class="classesContainer">
       <div class="classCard">
         <img src="./assets/classes/knight.gif" alt="knight" id="knightImage">
@@ -24,7 +24,13 @@
         <span>Wizard</span>
       </div> 
     </div>
-    <button class="button classButton" type="button">Confirm</button>
+    <button class="button classButton" type="button" onclick="showNameScreen()">Confirm</button>
   </section>
+  <section class="nameScreen" id="nameScreen">
+    <h3 class="choosNameTitle title">Por favor, inserta tu nombre</h3>
+    <input type="text" placeholder="Nombre" class="nameInput">
+    <button type="button" class="nameButton button">Confirmar</button>
+  </section>
+  <script src="./script.js" />
 </body>
 </html>
