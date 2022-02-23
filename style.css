@@ -28,9 +28,19 @@ body {
   transition: all ease 0.2s;
 }
 
+.button:hover {
+  background-color: rgb(75, 75, 75);
+  color: rgb(250, 180, 94);
+}
+
+.title {
+  font-size: 30px;
+}
+
 /* WELCOME SCREEN */
 
 .welcomeScreen {
+  display: flex;
   justify-content: space-around;
   height: 100vh;
   background-image: url(./assets/backgrounds/welcome-land.gif);
@@ -51,7 +61,6 @@ body {
 }
 
 .welcomeQuestion {
-  font-size: 25px;
   margin-top: 5%;
 }
 
@@ -154,4 +163,30 @@ body {
   #knightImage {
     width: 100px;
   }
+}
+
+/* NAME SCREEN */
+
+.nameScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/backgrounds/class-background.gif);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.choosNameTitle {
+  color: rgb(250, 180, 94);
+}
+
+.nameInput {
+  width: 20%;
+  min-width: 200px;
+  padding: 5px 0;
+  text-align: center;
 }
