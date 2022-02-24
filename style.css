@@ -28,17 +28,21 @@ body {
   font-weight: 600;
   border-radius: 10px;
   border: none;
-  cursor: pointer;
   transition: all ease 0.2s;
 }
 
-.button:hover {
+.activeButton:hover {
+  cursor: pointer;
   background-color: rgb(75, 75, 75);
   color: rgb(250, 180, 94);
 }
 
 .title {
   font-size: 30px;
+}
+
+input {
+  outline: none;
 }
 
 /* WELCOME SCREEN */
@@ -145,11 +149,6 @@ body {
   background-color: antiquewhite;
 }
 
-.classButton:hover {
-  background-color: rgb(167, 156, 142);
-  color: antiquewhite
-}
-
 @media (max-width: 1013px) {
   .classesContainer {
     width: 100%;
@@ -209,4 +208,29 @@ body {
   min-width: 200px;
   padding: 5px 0;
   text-align: center;
+}
+
+/* CONFIRM SCREEN */
+
+.confirmScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/backgrounds/class-background.gif);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.confirmTitle {
+  color: rgb(250, 180, 94);
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
